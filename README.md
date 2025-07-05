@@ -20,6 +20,7 @@ The primary source of Data used is KMS Abuja Division Database (main) and Order 
 At the preliminary stage of this, I performed Data Loading and Set-up. These include: 
 -	Creation of a database called KMS_db
 -	Loading of KMS SQL Case Study as a flat file to the database.
+-	Changing Customer_ID from SMALLINT ti INT.
 -	Setting up of the database using Order_id as primary key.
 -	Altering of monetary data type from float to Discount decimal (10,2).
 
@@ -329,11 +330,16 @@ select * from [dbo].[Order_Status]
 
 ```SQL
 
-select *
-from [dbo].[KMS Sql Case Study]
-full outer join [dbo].[Order_Status] on [dbo].[KMS Sql Case Study].order_id =
-[dbo].[Order_Status].order_id
-
+Create view [KMS Table View]
+AS
+SELECT [dbo].[KMS Sql Case Study].Order_ID,
+[dbo].[KMS Sql Case Study].Sales,
+ [dbo].[KMS Sql Case Study].Customer_Name,
+[dbo].[KMS Sql Case Study].Customer_Segment,
+[dbo].[Order_Status].[Status]
+FROM [dbo].[KMS Sql Case Study]
+FULL OUTER JOIN[dbo].[Order_Status]
+ON [dbo].[Order_Status].Order_ID = [dbo].[KMS Sql Case Study].Order_ID
 ```
 
 <img src="Joined Tables.png" />
@@ -390,3 +396,19 @@ select * from [dbo].[Order_Status]
 #### Explanation
 
 The company didn't spend shipping cost based in order priority. This is because irrespective of the priority placed on the product, delivery truck was used the more. This is because products are urgently demanded for by the customers, and economical for both customers and the company as shown in the value it returned in the query.
+
+## Project Insights and Summary
+From the analyzed data and dashboard provided, the following conclusions were arrived at: 
+
+-	The highest selling region is Western region, while the least is Nunavut region.
+-	There is need to boost more sales in underperforming regions.
+-	Strategic marketing should be employed to reach fewer performing regions and cities.
+-	An effective customer relations department should be set up to ascertain problems leading to return of items and be properly addressed.
+
+
+## Conclusion
+
+Based on the SQL analysis of sales data from 2009 to 2012, Office supplies product category has the highest sales and selling region that topped the list is West, contributing a significant  total revenue. Region West consistently outperforms others in both volume and value of sales. Although, returned items by specific customers returned some items with affected the flow of income to the organization. 
+
+These insights suggest focusing marketing efforts on underoeeforming regions and products and replicating successful strategies from Region West in other regions. Added analysis should be done in grey areas too.
+
