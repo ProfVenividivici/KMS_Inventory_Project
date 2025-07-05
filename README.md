@@ -30,7 +30,7 @@ alter column sales decimal (10,2)
 
 ```
 
-<img src="Microsoft Excel Image.jpg" />
+<img src="KMS Inventory Database.png" />
 
 -	Columns that were modified include: Sales, Discount, Unit Price, Discount, Profit, and Shipping Cost.
 
@@ -83,6 +83,9 @@ select * from [dbo].[KMS Sql Case Study]
 
 ```
 
+<img src="Product Category With Highest Sales.png" />
+
+
 ### 2. Top 3 Highest Regions in Terms of Sales
 
 Insert this syntax and Execute afterwards:
@@ -103,6 +106,9 @@ Then, execute by calling the table:
 select * from [dbo].[KMS Sql Case Study]
 
 ```
+
+<img src="Top 3 Region.png" />
+
 
 ### 2. Top 3 Lowest Regions in Terms of Sales
 
@@ -125,6 +131,9 @@ select * from [dbo].[KMS Sql Case Study]
 
 ```
 
+<img src="Bottom 3 Region.png" />
+
+
 ### 3. Total Sales of Appliances in Ontario
 
 Insert this syntax and Execute afterwards:
@@ -144,6 +153,8 @@ Then, execute by calling the table:
 select * from [dbo].[KMS Sql Case Study]
 
 ```
+
+<img src="Total Sales at Ontario.png" />
 
 
 ### 4. Advice to Increase Revenue from Bottom 10
@@ -167,6 +178,9 @@ Then, execute by calling the table:
 select * from [dbo].[KMS Sql Case Study]
 
 ```
+
+<img src="Increase of Revenue Advice.png" />
+
 #### Advice to Increase Revenue.
 -
 -
@@ -193,6 +207,9 @@ select * from [dbo].[KMS Sql Case Study]
 
 ```
 
+<img src="Incurred Shipping Method.png" />
+
+
 ## CASE SCENERIO 2
 
 ### 6. Most Valuable Customers and Preferred Products or Services
@@ -216,6 +233,9 @@ select * from [dbo].[KMS Sql Case Study]
 
 ```
 
+<img src="Most Valuable Customers.png" />
+
+
 ### 7. Small Business Customer with Highest Sales
 
 Insert this syntax and Execute afterwards:
@@ -237,6 +257,9 @@ Then, execute by calling the table:
 select * from [dbo].[KMS Sql Case Study]
 
 ```
+
+<img src="Small Business Customer.png" />
+
 
 ### 8. Most Order By Corporate Customer (2009-2012)
 
@@ -260,6 +283,9 @@ select * from [dbo].[KMS Sql Case Study]
 
 ```
 
+<img src="Most Order By Corporate Customer.png" />
+
+
 ### 9. Most Profitable Consumer Customer
 
 Insert this syntax and Execute afterwards:
@@ -281,6 +307,8 @@ Then, execute by calling the table:
 select * from [dbo].[KMS Sql Case Study]
 
 ```
+
+<img src="Profitable Consumer Customer.png" />
 
 -------------------------------------------------------
 
@@ -307,6 +335,9 @@ full outer join [dbo].[Order_Status] on [dbo].[KMS Sql Case Study].order_id =
 [dbo].[Order_Status].order_id
 
 ```
+
+<img src="Joined Tables.png" />
+
 
 Afterwards, insert this syntax and Execute afterwards
 
@@ -352,6 +383,10 @@ Then, execute by calling the table:
 select * from [dbo].[Order_Status]
 
 ```
+
+<img src="Opinion on Shipping Cost.png" />
+
+
 #### Explanation
 
 The company didn't spend shipping cost based in order priority. This is because irrespective of the priority placed on the product, delivery truck was used the more. This is because products are urgently demanded for by the customers, and economical for both customers and the company as shown in the value it returned in the query.
