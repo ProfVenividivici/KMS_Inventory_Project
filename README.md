@@ -183,9 +183,10 @@ select * from [dbo].[KMS Sql Case Study]
 <img src="Increase of Revenue Advice.png" />
 
 #### Advice to Increase Revenue.
--
--
--
+- Engage in effective marketing.
+- Use discounted pricing to boost sales in underperforming regions.
+- Provide feedback mechanisms and customer reviews on products.
+- Engage in constructive dialogue with aggrived customers to improve company's image.
 
 ### 5. Shipping Method with most Shipping Cost
 
