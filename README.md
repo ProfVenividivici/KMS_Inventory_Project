@@ -350,4 +350,6 @@ Then, execute by calling the table:
 select * from [dbo].[Order_Status]
 
 ```
+#### Explanation
 
+The company didn't spend shipping cost based in order priority. This is because irrespective of the priority placed on the product, delivery truck was used the more. This is because products are urgently demanded for by the customers, and economical for both customers and the company as shown in the value it returned in the query.
