@@ -30,6 +30,8 @@ alter column sales decimal (10,2)
 
 ```
 
+<img src="Microsoft Excel Image.jpg" />
+
 -	Columns that were modified include: Sales, Discount, Unit Price, Discount, Profit, and Shipping Cost.
 
 ### Questions KPI
